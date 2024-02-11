@@ -1,0 +1,47 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: darkgray;
+    min-height: 100vh;
+}
+
+.section {
+    padding: 40px 0;
+}
+
+.container {
+    max-width: 1200px;
+    padding: 0 20px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+img {
+    display: block;
+    width:100%;
+    height:100%;
+    object-fit: cover;
+}
+
+.catalog {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 24px;
+
+    &-item {
+        padding: 20px;
+        border: 2px solid red;
+        border-radius: 16px;
+
+        &__img-container {
+            margin-bottom: 24px;
+            max-width: 100%;
+            aspect-ratio: 1 / 1;
+            overflow: hidden;
+        }
+    }
+}
